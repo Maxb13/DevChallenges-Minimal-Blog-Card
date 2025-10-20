@@ -22,11 +22,13 @@
   <link rel="dns-prefetch" href="https://maxb13.github.io">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
   <!-- Preload critical image for faster LCP -->
-  <link rel="preload" as="image" href="./resources/Cactus.jpg" />
+  <link rel="preload" as="image" href="./resources/Cactus.jpg" fetchpriority="high" />
 
   <!-- Cache-friendly resource loading -->
   <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
