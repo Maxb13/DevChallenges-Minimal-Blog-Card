@@ -29,6 +29,8 @@
 
   <!-- Preload critical image for faster LCP -->
   <link rel="preload" as="image" href="./resources/Cactus.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="./resources/Cactus@2x.jpg" fetchpriority="high"
+    media="(min-resolution: 2dppx)" />
 
   <!-- Cache-friendly resource loading -->
   <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
