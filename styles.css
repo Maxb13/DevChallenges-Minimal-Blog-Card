@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sora', sans-serif;
+    font-display: optional;
     line-height: 1.5em;
 }
 
@@ -35,8 +36,6 @@ body {
     border: 0px solid white;
     border-radius: 8px;
     margin: 16px;
-    width: auto;
-    height: auto;
 }
 
 .design {
