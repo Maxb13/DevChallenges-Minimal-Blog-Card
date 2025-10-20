@@ -29,20 +29,25 @@ body {
     box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
 }
 
-.cactus-image {
+.img-container {
     padding: 16px;
+}
+
+.cactus-image {
     border: 0px solid white;
     border-radius: 8px;
 }
 
 .design {
-    background: #E5EAF0;
+    background: #FAFAF9;
     color: #7C19EE;
     border-radius: 50px;
-    padding: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-bottom: 16px;
+    font-weight: 700;
 }
 
 .blog-title {
@@ -86,4 +91,8 @@ body {
 
 .padding-left {
     padding-left: 16px;
+}
+
+.gray-text {
+    color: #394150;
 }
