@@ -25,6 +25,9 @@
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
+  <!-- Preload critical image for faster LCP -->
+  <link rel="preload" as="image" href="./resources/Cactus.jpg" />
+
   <!-- Cache-friendly resource loading -->
   <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -47,16 +50,22 @@
 <body>
   <div class="container">
     <div class="blog-card-container">
-      <img src="./resources/Cactus.jpg" alt="Cactus Image" class="cactus-image" />
-      <div class="">
+      <picture>
+        <!-- High DPI displays (2x) -->
+        <source srcset="./resources/Cactus@2x.jpg 2x, ./resources/Cactus.jpg 1x" type="image/jpeg">
+        <!-- Fallback for browsers that don't support picture element -->
+        <img src="./resources/Cactus.jpg" srcset="./resources/Cactus.jpg 1x, ./resources/Cactus@2x.jpg 2x"
+          alt="Cactus Image" class="cactus-image" loading="eager" decoding="async" fetchpriority="high" />
+      </picture>
+      <div class="pl-16">
         <p class="design tag">Design</p>
       </div>
-      <h1 class="blog-title title">Embracing Minimalism</h1>
-      <p class="blog-body body gray-text">From minimalist sculptures to minimalist</br>
+      <h1 class="blog-title title pl-16">Embracing Minimalism</h1>
+      <p class="blog-body body gray-text pl-16">From minimalist sculptures to minimalist</br>
         paintings, this blog will inspire you to</br>
         appreciate the beauty that lies in simplicity.</p>
       <hr class="seperator-line">
-      <p class="author-name small-text gray-text">Annime Spratt</p>
+      <p class="author-name small-text gray-text pl-16">Annime Spratt</p>
     </div>
   </div>
 
