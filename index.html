@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>devChallenges.io | Minimal Blog Card</title>
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Simple Design and showcase for a Minimal Blog Card" />
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <!-- Canonical URL to prevent redirect issues -->
+  <link rel="canonical" href="https://maxb13.github.io/DevChallenges-Minimal-Blog-Card/" />
 
-      body {
-        height: 100vh;
-      }
+  <!-- Security and performance headers -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
+  <!-- Cache optimization headers -->
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" />
+  <meta name="format-detection" content="telephone=no" />
 
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Design
+  <link rel="dns-prefetch" href="//maxb13.github.io">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
-  Embracing Minimalism
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
-  From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.
+  <!-- Cache-friendly resource loading -->
+  <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./styles.css">
+  </noscript>
 
-  Annie Spratt -->
+  <!-- Preload Google Fonts (non-blocking) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
+  <title>devChallenges.io | Minimal Blog Card</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="blog-card-container">
+      <img src="./resources/Cactus.jpg" alt="Cactus Image" class="cactus-image" />
+      <div class="padding-left">
+        <p class="design tag">Design</p>
+      </div>
+      <h1 class="blog-title title padding-left">Embracing Minimalism</h1>
+      <p class="blog-body body padding-left">From minimalist sculptures to minimalist</br>
+        paintings, this blog will inspire you to</br>
+        appreciate the beauty that lies in simplicity.</p>
+      <hr class="seperator-line">
+      <p class="author-name body padding-left">Annime Spratt</p>
     </div>
-  </body>
+  </div>
+
+  <!-- Script to handle font loading and prevent layout shift -->
+  <script>
+    // Check if Inter font is loaded and apply class
+    document.fonts.ready.then(function () {
+      document.documentElement.classList.add('font-loaded');
+    });
+
+    // Fallback for older browsers
+    if (!document.fonts) {
+      setTimeout(function () {
+        document.documentElement.classList.add('font-loaded');
+      }, 3000);
+    }
+  </script>
+</body>
+
 </html>
