@@ -19,7 +19,7 @@ body {
 }
 
 .blog-card-container {
-    background: gray;
+    /* background: gray; */
     display: flex;
     flex-direction: column;
     justify-content: center;

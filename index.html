@@ -9,7 +9,7 @@
   <meta name="description" content="Simple Design and showcase for a Minimal Blog Card" />
 
   <!-- Canonical URL to prevent redirect issues -->
-  <link rel="canonical" href="https://maxb13.github.io/DevChallenges-Minimal-Blog-Card/" />
+  <link rel="canonical" href="https://maxb13.github.io/DevChallenges-Minimal-Blog-Card" />
 
   <!-- Security and performance headers -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,9 +19,9 @@
   <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" />
   <meta name="format-detection" content="telephone=no" />
 
-  <link rel="dns-prefetch" href="//maxb13.github.io">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://maxb13.github.io">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
 
@@ -37,18 +37,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload Google Fonts (non-blocking) -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Preload Google Fonts (non-blocking) - Using exact HTTPS URLs to avoid redirects -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap" rel="stylesheet">
   </noscript>
 
   <title>devChallenges.io | Minimal Blog Card</title>
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <div class="blog-card-container">
       <picture>
         <!-- High DPI displays (2x) -->
@@ -67,7 +67,7 @@
       <hr class="seperator-line">
       <p class="author-name small-text gray-text pl-16">Annime Spratt</p>
     </div>
-  </div>
+  </main>
 
   <!-- Script to handle font loading and prevent layout shift -->
   <script>
