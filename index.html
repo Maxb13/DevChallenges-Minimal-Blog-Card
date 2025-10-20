@@ -52,10 +52,11 @@
     <div class="blog-card-container">
       <picture>
         <!-- High DPI displays (2x) -->
-        <source srcset="./resources/Cactus@2x.jpg 2x, ./resources/Cactus.jpg 1x" type="image/jpeg">
+        <source srcset="./resources/Cactus@2x.jpg 2x, ./resources/Cactus.jpg 1x" type="image/jpeg" fetchpriority="high">
         <!-- Fallback for browsers that don't support picture element -->
         <img src="./resources/Cactus.jpg" srcset="./resources/Cactus.jpg 1x, ./resources/Cactus@2x.jpg 2x"
-          alt="Cactus Image" class="cactus-image" loading="eager" decoding="async" fetchpriority="high" />
+          alt="Cactus Image" class="cactus-image" loading="eager" decoding="async" fetchpriority="high" width="auto"
+          height="auto" />
       </picture>
       <div class="pl-16">
         <p class="design tag">Design</p>
